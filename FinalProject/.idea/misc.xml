@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.38427124023437503" />
         <entry key="app/src/main/res/layout/activity_reset_password.xml" value="0.31941528320312496" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23960418701171865" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.25" />
       </map>
     </option>
   </component>
