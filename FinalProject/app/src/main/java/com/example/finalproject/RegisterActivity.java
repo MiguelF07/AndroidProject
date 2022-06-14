@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,10 +20,10 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        EditText emailField = findViewById(R.id.email_edt_text);
-        EditText passwordField = findViewById(R.id.pass_edt_text);
-        Button loginButton = findViewById(R.id.login_btn);
-        Button registerButton = findViewById(R.id.signup_btn);
+        EditText emailField = findViewById(R.id.emailText);
+        EditText passwordField = findViewById(R.id.passwordText);
+        Button loginButton = findViewById(R.id.loginButton);
+        Button registerButton = findViewById(R.id.registerButton);
         mAuth = FirebaseAuth.getInstance();
 
         registerButton.setOnClickListener(view -> {

@@ -3,12 +3,9 @@ package com.example.finalproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -21,9 +18,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
 
-        EditText emailField = findViewById(R.id.email_edt_text);
-        Button resetButton = findViewById(R.id.reset_pass_btn);
-        Button cancelButton = findViewById(R.id.back_btn);
+        EditText emailField = findViewById(R.id.emailText);
+        Button resetButton = findViewById(R.id.resetPasswordButton);
+        Button cancelButton = findViewById(R.id.cancelButton);
         mAuth = FirebaseAuth.getInstance();
 
         resetButton.setOnClickListener(view -> {

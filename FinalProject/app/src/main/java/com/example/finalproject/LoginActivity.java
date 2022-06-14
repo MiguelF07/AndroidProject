@@ -6,16 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,11 +25,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        EditText emailField = findViewById(R.id.email_edt_text);
-        EditText passwordField = findViewById(R.id.pass_edt_text);
-        Button loginButton = findViewById(R.id.login_btn);
-        Button registerButton = findViewById(R.id.signup_btn);
-        TextView resetPassword = findViewById(R.id.reset_pass_tv);
+        EditText emailField = findViewById(R.id.emailText);
+        EditText passwordField = findViewById(R.id.passwordText);
+        Button loginButton = findViewById(R.id.loginButton);
+        Button registerButton = findViewById(R.id.registerButton);
+        TextView resetPassword = findViewById(R.id.forgotButton);
         mAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(view -> {
