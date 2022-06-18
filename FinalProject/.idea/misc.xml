@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/fabio/OneDrive/Ambiente de Trabalho/Docs/3o ano/ICM/pf/AndroidProject/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.18478260869565216" />
+        <entry key="..\:/Users/fabio/OneDrive/Ambiente de Trabalho/Docs/3o ano/ICM/pf/AndroidProject/FinalProject/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/fabio/OneDrive/Ambiente de Trabalho/Docs/3o ano/ICM/pf/AndroidProject/FinalProject/app/src/main/res/layout/fragment_maps.xml" value="0.18478260869565216" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28305358886718746" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.38427124023437503" />
