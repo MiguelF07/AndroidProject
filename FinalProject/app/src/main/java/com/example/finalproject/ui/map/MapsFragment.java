@@ -25,23 +25,25 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsFragment extends Fragment {
 
-    PackageManager pm = getActivity().getPackageManager();
-    ActivityResultLauncher<String[]> locationPermissionRequest =
-            registerForActivityResult(new ActivityResultContracts
-                            .RequestMultiplePermissions(), result -> {
-                        Boolean fineLocationGranted = pm.checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION, getActivity().getPackageName()) == PackageManager.PERMISSION_GRANTED;
-                        Boolean coarseLocationGranted = pm.checkPermission(Manifest.permission.ACCESS_COARSE_LOCATION, getActivity().getPackageName()) == PackageManager.PERMISSION_GRANTED;
-                        if (fineLocationGranted != null && fineLocationGranted) {
-                            // Precise location access granted.
-                        } else if (coarseLocationGranted != null && coarseLocationGranted) {
-                            // Only approximate location access granted.
-                        } else {
-                            // No location access granted.
-                        }
-                    }
-            );
+
 
     private final OnMapReadyCallback callback = new OnMapReadyCallback() {
+
+        /*PackageManager pm = getActivity().getPackageManager();
+        ActivityResultLauncher<String[]> locationPermissionRequest =
+                registerForActivityResult(new ActivityResultContracts
+                                .RequestMultiplePermissions(), result -> {
+                            Boolean fineLocationGranted = pm.checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION, getActivity().getPackageName()) == PackageManager.PERMISSION_GRANTED;
+                            Boolean coarseLocationGranted = pm.checkPermission(Manifest.permission.ACCESS_COARSE_LOCATION, getActivity().getPackageName()) == PackageManager.PERMISSION_GRANTED;
+                            if (fineLocationGranted != null && fineLocationGranted) {
+                                // Precise location access granted.
+                            } else if (coarseLocationGranted != null && coarseLocationGranted) {
+                                // Only approximate location access granted.
+                            } else {
+                                // No location access granted.
+                            }
+                        }
+                );*/
 
         /**
          * Manipulates the map once available.
